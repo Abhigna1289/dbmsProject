@@ -1,0 +1,738 @@
+﻿creating a table customer 
+create table customer (c_id number(25) primary key, c_name varchar(25), username varchar(25), phone_num number(10));
+
+Table created.
+Inserting the data into customer table 
+SQL> insert into customer values(12301, 'Abhi', 'abhi_01', 8769289021);
+1 row created.
+
+SQL> insert into customer values(12302, 'Bobby', 'bob_rock', 7834589021);
+
+1 row created.
+
+SQL> insert into customer values(12303, 'prathyusha', 'prathyu', 7985324672);
+
+1 row created.
+
+SQL> insert into customer values(12304, 'lavanya', 'love_u', 9876324672);
+
+1 row created.
+
+SQL> insert into customer values(12305, 'Arjun', 'ar_june', 9854726543);
+
+1 row created.
+
+SQL> insert into customer values(12306, 'Pavitra', 'pavs_04', 8888826543);
+
+1 row created.
+
+SQL> insert into customer values(12307, 'harshith', 'harshey', 8885542456);
+
+1 row created.
+
+SQL> insert into customer values(12308, 'arnav', 'arnav', 7584542456);
+
+1 row created.
+
+SQL> insert into customer values(12309, 'saranya', 'sarna', 7584542456);
+
+1 row created.
+
+SQL> insert into customer values(12310, 'kalki', 'kal_ki', 7785423994);
+
+1 row created.
+
+SQL> insert into customer values(12311, 'nagma', 'nag_ni', 7785424575);
+
+1 row created.
+
+SQL> insert into customer values(12312, 'aashna', 'ashh', 8885424575);
+
+1 row created.
+
+SQL> insert into customer values(12313, 'poornima', 'poo_h', 8885424545);
+
+1 row created.
+
+SQL> insert into customer values(12314, 'karan', 'karan', 896321456);
+
+1 row created.
+
+SQL> insert into customer values(12315, 'spandana', 'sweety', 9963214578);
+
+1 row created.
+
+SQL> insert into customer values(12316, 'bhagmathi', 'bag_ghee', 944568217);
+
+1 row created.
+
+SQL> insert into customer values(12317, 'akshay', 'akshay', 775842369);
+
+1 row created.
+
+SQL> insert into customer values(12318, 'monica', 'mon_ka', 888556699);
+
+1 row created.
+
+SQL> insert into customer values(12319, 'chandler', 'chandilier', 988556699);
+
+1 row created.
+
+SQL> insert into customer values(12320, 'joey', 'joe', 9855656699);
+
+2.Creating table products
+
+create table products (p_id varchar(5) primary key, p_name varchar(20), p_quantity number(5), p_category varchar(15), p_price number(6));
+
+Table created.
+
+Inseriting values into product table
+
+SQL> insert into products values('p101', 'phonecase', 100, 'accessory', 250);
+
+1 row created.
+
+SQL> insert into products values('p102', 'phone', 200, 'electronics', 20000);
+
+1 row created.
+
+SQL> insert into products values('p103', 'menshirt', 200, 'apparel', 1500);
+
+1 row created.
+
+SQL> insert into products values('p104', 'popsocket', 100, 'accessory', 200);
+
+1 row created.
+
+SQL> insert into products values('p105', 'earrings', 100, 'accessory', 600);
+
+1 row created.
+
+SQL> insert into products values('p106', 'womentop', 200, 'apparel', 1600);
+
+1 row created.
+
+SQL> insert into products values('p107', 'womenskirt', 100, 'apparel', 2000);
+
+1 row created.
+
+SQL> insert into products values('p108', 'womenbottom', 100, 'apparel', 1800);
+
+1 row created.
+
+SQL> insert into products values('p109', 'trouser', 100, 'apparel', 1000);
+
+1 row created.
+
+SQL> insert into products values('p110', 'trouser2', 100, 'apparel', 1200);
+
+1 row created.
+
+SQL> insert into products values('p111', 'earphones', 250, 'electronics', 800);
+
+1 row created.
+
+SQL> insert into products values('p112', 'pendrive', 200, 'electronics', 1000);
+
+1 row created.
+
+SQL> insert into products values('p113', 'laptop', 100, 'electronics', 50000);
+
+1 row created.
+
+SQL> insert into products values('p114', 'womenblouse', 100, 'apparel', 1200);
+
+1 row created.
+
+SQL> insert into products values('p115', 'menbelt', 100, 'apparel', 500);
+
+1 row created.
+
+SQL> insert into products values('p116', 'stole', 100, 'apparel', 800);
+
+1 row created.
+
+SQL> insert into products values('p117', 'sandals', 100, 'apparel', 600);
+
+1 row created.
+
+SQL> insert into products values('p118', 'shoes', 200, 'apparel', 1200);
+
+1 row created.
+
+SQL> insert into products values('p119', 'tablet', 100, 'electronics', 30000);
+
+1 row created.
+
+SQL> insert into products values('p120', 'keyboard', 200, 'electronics', 9000);
+
+1 row created.
+
+SQL> select * from products;
+
+P_ID  P_NAME               P_QUANTITY P_CATEGORY         P_PRICE
+----- -------------------- ---------- --------------- ----------
+p101  phonecase                   100 accessory              250
+p102  phone                       200 electronics          20000
+p103  menshirt                    200 apparel               1500
+p104  popsocket                   100 accessory              200
+p105  earrings                    100 accessory              600
+p106  womentop                    200 apparel               1600
+p107  womenskirt                  100 apparel               2000
+p108  womenbottom                 100 apparel               1800
+p109  trouser                     100 apparel               1000
+p110  trouser2                    100 apparel               1200
+p111  earphones                   250 electronics            800
+
+P_ID  P_NAME               P_QUANTITY P_CATEGORY         P_PRICE
+----- -------------------- ---------- --------------- ----------
+p112  pendrive                    200 electronics           1000
+p113  laptop                      100 electronics          50000
+p114  womenblouse                 100 apparel               1200
+p115  menbelt                     100 apparel                500
+p116  stole                       100 apparel                800
+p117  sandals                     100 apparel                600
+p118  shoes                       200 apparel               1200
+p119  tablet                      100 electronics          30000
+p120  keyboard                    200 electronics           9000
+
+	C_ID C_NAME                    USERNAME                   PHONE_NUM
+---------- ------------------------- ------------------------- ----------
+     12301 Abhi                      abhi_01                   8769289021
+     12302 Bobby                     bob_rock                  7834589021
+     12303 prathyusha                prathyu                   7985324672
+     12304 lavanya                   love_u                    9876324672
+     12305 Arjun                     ar_june                   9854726543
+     12306 Pavitra                   pavs_04                   8888826543
+     12307 harshith                  harshey                   8885542456
+     12308 arnav                     arnav                     7584542456
+     12309 saranya                   sarna                     7584542456
+     12310 kalki                     kal_ki                    7785423994
+     12311 nagma                     nag_ni                    7785424575
+
+      C_ID C_NAME                    USERNAME                   PHONE_NUM
+---------- ------------------------- ------------------------- ----------
+     12312 aashna                    ashh                      8885424575
+     12313 poornima                  poo_h                     8885424545
+     12314 karan                     karan                      896321456
+     12315 spandana                  sweety                    9963214578
+     12316 bhagmathi                 bag_ghee                   944568217
+     12317 akshay                    akshay                     775842369
+     12318 monica                    mon_ka                     888556699
+     12319 chandler                  chandilier                 988556699
+     12320 joey                      joe                       9855656699
+
+20 rows selected.
+3. creating order table as orderr 
+
+create table orderr(order_id varchar(10) PRIMARY KEY, order_quantity number(6), order_date date, payment_method varchar(10),c_id not null,FOREIGN KEY(c_id) REFERENCES customer(c_id),p_id not null,FOREIGN KEY (p_id) REFERENCES products(p_id));
+
+SQL> insert into orderr values('A12F501', 1, '12-feb-2018', 'card', 12309, 'p103');
+
+1 row created.
+Inserting data into order table
+
+SQL> insert into orderr values('A12F502', 2, '12-nov-2019', 'cod', 12305, 'p101');
+
+1 row created.
+
+SQL> insert into orderr values('A12F503', 1, '12-nov-2019', 'cod', 12305, 'p102');
+
+1 row created.
+
+SQL> insert into orderr values('A12F504', 1, '20-dec-2019', 'cod', 12315, 'p118');
+
+1 row created.
+
+SQL> insert into orderr values('A12F505', 5, '11-apr-2019', 'online', 12315, 'p104');
+
+1 row created.
+
+SQL> insert into orderr values('A12F506', 1, '19-sep-2019', 'online', 12311, 'p111');
+
+1 row created.
+
+SQL> insert into orderr values('A12F507', 1, '22-oct-2019', 'card', 12308, 'p115');
+
+1 row created.
+
+SQL> insert into orderr values('A12F508', 1, '22-oct-2019', 'card', 12308, 'p109');
+
+1 row created.
+
+SQL> insert into orderr values('A12F509', 1, '02-sep-2018', 'online', 12301, 'p120');
+
+SQL> select * from orderr;
+
+ORDER_ID   ORDER_QUANTITY ORDER_DAT PAYMENT_ME       C_ID P_ID
+---------- -------------- --------- ---------- ---------- -----
+A12F501                 1 12-FEB-18 card            12309 p103
+A12F502                 2 12-NOV-19 cod             12305 p101
+A12F503                 1 12-NOV-19 cod             12305 p102
+A12F504                 1 20-DEC-19 cod             12315 p118
+A12F505                 5 11-APR-19 online          12315 p104
+A12F506                 1 19-SEP-19 online          12311 p111
+A12F507                 1 22-OCT-19 card            12308 p115
+A12F508                 1 22-OCT-19 card            12308 p109
+A12F509                 1 02-SEP-18 online          12301 p120
+A12F510                 1 02-DEC-19 online          12310 p114
+A12F511                 1 14-OCT-19 card            12304 p107
+
+ORDER_ID   ORDER_QUANTITY ORDER_DAT PAYMENT_ME       C_ID P_ID
+---------- -------------- --------- ---------- ---------- -----
+A12F512                 2 24-DEC-19 cod             12301 p116
+A12F513                 5 22-DEC-19 card            12318 p105
+A12F514                 1 02-DEC-19 card            12314 p110
+A12F515                 2 14-DEC-19 card            12302 p120
+A12F516                 1 14-DEC-19 card            12302 p113
+A12F517                 1 24-NOV-19 cod             12307 p111
+A12F518                 1 05-DEC-19 cod             12306 p108
+A12F519                 1 15-DEC-19 online          12320 p118
+A12F520                 1 28-DEC-19 online          12318 p110
+
+select * from shipping;
+
+SHIPPING_S ADD_COUNTR ADD_CITY        DR_NO OTHER_DETA       C_ID ORDER_ID
+---------- ---------- ---------- ---------- ---------- ---------- ----------
+delivered  india      mumbai             11                 12309 A12F501
+delivered  india      hyderabad          52                 12305 A12F502
+delivered  india      hyderabad          52                 12305 A12F503
+dispatched india      chennai            25                 12315 A12F504
+dispatched india      chennai            25                 12315 A12F505
+dispatched india      vizag              25 neargitam       12311 A12F506
+delivered  india      hyderabad          25                 12308 A12F507
+delivered  india      hyderabad          25                 12308 A12F508
+delivered  india      vizag              25                 12301 A12F509
+shipped    india      banglore           67                 12310 A12F510
+delivered  india      banglore           72 gandinagar      12304 A12F511
+
+SHIPPING_S ADD_COUNTR ADD_CITY        DR_NO OTHER_DETA       C_ID ORDER_ID
+---------- ---------- ---------- ---------- ---------- ---------- ----------
+dispatched india      banglore           52 office          12301 A12F512
+dispatched india      hyderabad          52                 12318 A12F513
+shipped    india      vizag              14 gajuwaka        12314 A12F514
+shipped    india      vizag              19 nad             12302 A12F515
+shipped    india      vizag              19 nad             12302 A12F516
+delivered  india      chennai            19                 12307 A12F517
+shipped    india      vizag              52                 12307 A12F518
+dispatched india      hyderabad          55                 12320 A12F519
+dispatched india      hyderabad          17 office          12318 A12F520
+
+
+
+1.selecting customer if who orderd products after 2nd december 2019
+select distinct(c_id) from customer where c_id in(select c_id from orderr where order_date > '02-DEC-19');
+
+      C_ID
+----------
+     12301
+     12302
+     12306
+     12315
+     12318
+     12320
+
+2.selecting male cutomers who lives in hyderbad pays with card
+
+select c_name from customer where gender='m' and c_id in(select c_id from orderr where payment_method='card' and c_id in(select c_id from shipping where add_city='hyderabad'));
+
+C_NAME
+-------------------------
+arnav
+
+3.selecting male  cutomers who lives in vizag
+
+select c_name from customer where gender='m' and c_id in(select c_id from shipping where add_city='vizag');
+
+C_NAME
+-------------------------
+Bobby
+harshith
+karan
+
+4.selecting cutomers who orderd only electronics 
+select c_name from customer where c_id in(select c_id from orderr where p_id in(select p_id from products where p_category ='electronics'));
+
+C_NAME
+-------------------------
+Abhi
+Bobby
+Arjun
+harshith
+nagma
+
+5. retriving average price of the products using avrage function
+select avg(p_price) from products;
+
+AVG(P_PRICE)
+------------
+      6262.5
+
+6. retreving name of customers whos phone numbers start with 888
+select c_name from customer where phone_num like '888%';
+
+C_NAME
+-------------------------
+Pavitra
+harshith
+aashna
+poornima
+monica
+
+7. reteving all the products whos quantity is more than 200
+SQL> select * from products where p_quantity >= 200;
+
+P_ID  P_NAME               P_QUANTITY P_CATEGORY         P_PRICE
+----- -------------------- ---------- --------------- ----------
+p102  phone                       200 electronics          20000
+p103  menshirt                    200 apparel               1500
+p106  womentop                    200 apparel               1600
+p111  earphones                   250 electronics            800
+p112  pendrive                    200 electronics           1000
+p118  shoes                       200 apparel               1200
+p120  keyboard                    200 electronics           9000
+
+7 rows selected.
+
+8. displaying all the names of customers in ascending order
+
+SQL> select c_name from customer order by c_name asc ;
+
+C_NAME
+-------------------------
+Abhi
+Arjun
+Bobby
+Pavitra
+aashna
+akshay
+arnav
+bhagmathi
+chandler
+harshith
+joey
+
+C_NAME
+-------------------------
+kalki
+karan
+lavanya
+monica
+nagma
+poornima
+prathyusha
+saranya
+spandana
+
+20 rows selected.
+
+9. displaying nnumber of customers who orederd products and payed with card 
+select count(c_id) from customer where c_id in(select c_id from orderr where payment_method=’card’);
+
+COUNT(C_ID)
+-----------
+          6
+
+10. retreving names of the customers whos goods got deliverd and payed when deliverd 
+select c_name from customer where c_id in(select c_id from orderr where payment_method='cod' and c_id in(select c_id from shipping where shipping_status='delivered'));
+
+C_NAME
+-------------------------
+Arjun
+Abhi
+harshith
+
+11. retreving names of the customers who odered  more than 4 goods
+select c_name from customer where c_id in(select c_id from orderr where order_quantity>4);
+
+C_NAME
+-------------------------
+spandana
+monica
+
+12. retreving all the name of customers who got received their orders
+select c_name from customer where c_id in(select c_id from shipping where shipping_status=’delivered’);
+
+C_NAME
+-------------------------
+saranya
+Arjun
+arnav
+Abhi
+lavanya
+harshith
+
+6 rows selected.
+
+13. retreving all the customers who received their orders and lives in vizag
+select c_name from customer where c_id in(select c_id from shipping where shipping_status =’delivered’ and add_city=’vizag’);
+
+C_NAME
+-------------------------
+Abhi
+
+
+14. retreving all the names of customers who orderd either phone or earphones
+select c_id from orderr where p_id in(select p_id from products where p_name='phone' or p_name='earphones');
+
+      C_ID
+----------
+     12305
+     12311
+     12307
+
+15.counting how many male customers are present using count function
+
+select COUNT(c_name) from customer where gender='m';
+
+COUNT(C_NAME)
+-------------
+            8
+
+
+16.counting how many female customers are present using count function
+select COUNT(c_name) from customer where gender='f';
+
+COUNT(C_NAME)
+-------------
+           12
+
+17.counting who many customers orderd products
+select count(distinct(c_id)) from orderr;
+
+COUNT(DISTINCT(C_ID))
+---------------------
+                   14
+
+
+18.retreving number of keyboards sold
+select sum(order_quantity) from orderr where p_id in(select p_id from products where p_name='keyboard');
+
+SUM(ORDER_QUANTITY)
+-------------------
+                  3
+19.joining products and orderr table using join 
+select p_price,order_quantity from products join orderr on products.p_id=orderr.p_id;
+
+   P_PRICE ORDER_QUANTITY
+---------- --------------
+      1500              1
+       250              2
+     20000              1
+      1200              1
+       200              5
+       800              1
+       500              1
+      1000              1
+      9000              1
+      1200              1
+      2000              1
+
+   P_PRICE ORDER_QUANTITY
+---------- --------------
+       800              2
+       600              5
+      1200              1
+      9000              2
+     50000              1
+       800              1
+      1800              1
+      1200              1
+      1200              1
+
+20 rows selected.
+20.joining products and order table using join
+select p_quantity,order_quantity from products join orderr on products.p_id=orderr.p_id;
+
+P_QUANTITY ORDER_QUANTITY
+---------- --------------
+       200              1
+       100              2
+       200              1
+       200              1
+       100              5
+       250              1
+       100              1
+       100              1
+       200              1
+       100              1
+       100              1
+
+P_QUANTITY ORDER_QUANTITY
+---------- --------------
+       100              2
+       100              5
+       100              1
+       200              2
+       100              1
+       250              1
+       100              1
+       200              1
+       100              1
+
+20 rows selected.
+21.retreving product ids and grouping them using their category 
+select count(p_id),p_category from products group by p_category;
+
+COUNT(P_ID) P_CATEGORY
+----------- ---------------
+         11 apparel
+          3 accessory
+          6 electronics
+22. retreving number of customers whos name starts with c
+select count(c_id) from customer where c_name like 'a%';
+
+COUNT(C_ID)
+-----------
+          3
+23.retreving name and their ids of customers whos name starts with a
+select c_name,c_id from customer where c_name like 'a%';
+
+C_NAME                          C_ID
+------------------------- ----------
+arnav                          12308
+aashna                         12312
+akshay                         12317
+24.selecting all the products whos product price is more than 1000
+select p_name from products where p_price>1000;
+
+P_NAME
+--------------------
+phone
+menshirt
+womentop
+womenskirt)
+womenbottom
+trouser2
+laptop
+womenblouse
+shoes
+tablet
+keyboard
+
+23)	retreving name and their ids of customers whos name starts with a
+>select c_name,c_id from customer where c_name like 'a%';
+	Output
+C_NAME                          C_ID
+------------------------- ----------
+arnav                          12308
+aashna                         12312
+akshay                         12317
+
+24)	selecting all the products whos product price is more than 1000
+>select p_name from products where p_price>1000;
+	Output
+P_NAME
+--------------------
+phone
+menshirt
+womentop
+womenskirt)
+womenbottom
+trouser2
+laptop
+womenblouse
+shoes
+tablet
+keyboard
+
+25)	Getting the female customer names using payment method other than cod
+>select c_name from customer where gender='f' and  c_id in(select c_id from orderr where payment_method<> 'cod');
+	Output
+C_NAME
+-------------------------
+saranya
+spandana
+nagma
+Abhi
+kalki
+lavanya
+monica
+
+7 rows selected.
+26)	select c_name from customer where c_id in(select c_id from orderr where order_date BETWEEN '01-DEC-19' AND '25-DEC-19');
+	Output
+C_NAME
+-------------------------
+spandana
+kalki
+Abhi
+monica
+karan
+Bobby
+Pavitra
+joey
+
+8 rows selected.
+
+27)	select p_name as product from products where p_category='electronics';
+	Output
+PRODUCT
+--------------------
+phone
+earphones
+pendrive
+laptop
+tablet
+keyboard
+
+6 rows selected.
+
+28)	select p_id,avg(order_quantity) from orderr group by p_id;
+	Output
+P_ID  AVG(ORDER_QUANTITY)
+----- -------------------
+p102                    1
+p118                    1
+p115                    1
+p120                  1.5
+p114                    1
+p108                    1
+p111                    1
+p101                    2
+p110                    1
+p107                    1
+p103                    1
+
+P_ID  AVG(ORDER_QUANTITY)
+----- -------------------
+p104                    5
+p116                    2
+p105                    5
+p109                    1
+p113                    1
+
+16 rows selected.
+29)	select p_category, avg(p_price) from products group by p_category;
+
+P_CATEGORY     AVG(P_PRICE)
+--------------- ------------
+apparel          	 1218.18182
+accessory                350
+electronics        18466.6667
+
+30)	select count(order_id),p_id from orderr group by p_id;
+
+COUNT(ORDER_ID) P_ID
+--------------- -----
+              1 p102
+              2 p118
+              1 p115
+              2 p120
+              1 p114
+              1 p108
+              2 p111
+              1 p101
+              2 p110
+              1 p107
+              1 p103
+
+COUNT(ORDER_ID) P_ID
+--------------- -----
+              1 p104
+              1 p116
+              1 p105
+              1 p109
+              1 p113
+
+16 rows selected.
